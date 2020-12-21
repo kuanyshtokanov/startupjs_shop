@@ -11,7 +11,7 @@ const Header = () => {
   return pug`
     View.header
       View.logo
-        Image.img(source={uri:base+'/assets/logo.svg'})
+        Image.img(source={uri:base+'/assets/logo.png'})
       Text.title Stellar
       Text.txt Just another free, fully responsive site template built by 
         Link(url='https://twitter.com/ajlkn')

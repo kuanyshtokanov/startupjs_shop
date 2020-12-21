@@ -6,6 +6,7 @@ import './index.styl'
 import { Content } from '@startupjs/ui'
 
 import Header from '../../../components/Header'
+import Breadcrumb from '../../../components/Breadcrumb'
 import Main from '../../../components/Main'
 import Footer from '../../../components/Footer'
 
@@ -14,5 +15,6 @@ export default observer(function PHome() {
     ScrollView.root
       View.container
         Header
+        Breadcrumb
   `
 })

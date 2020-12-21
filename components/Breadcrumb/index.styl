@@ -1,40 +1,35 @@
-.header
-  padding 8u 3u 2u
-  align-items center
+.root
+  background-image url(/assets/breadcrumb.jpg)
+  background-size cover
+  background-position 48% center
+  padding-bottom 8u
+  padding-top 7u
+
+.wrapper
+  width 100%
+  margin auto
+  padding 0 2u
   +tablet()
-     padding 12u 8u 6u 8u
+    max-width 90u
   +desktop()
-    padding 17u 11u 9u 12u
-
-.logo
-  background-color white
-  border-radius 50%
-  // height 11u
-  // width 11u
-  justify-content center
-  align-items center
-  margin-bottom 3u
-
-.img
-  height 10u
-  width 10u
+    max-width 120u
+  +wide()
+    max-width 160u
 
 .title
-  font-size 5.5u
-  font-weight 300
-  color white
-  line-height 6u
-  margin-bottom 1u
-  
-.txt
-  font-size 2u
-  line-height 3u
-  color rgba(255, 255, 255, 0.65)
-  text-align center
-  margin-bottom 4u
-  max-width 47u
+  font-size 4u
+  text-transform uppercase
+  font-weight bold
+  color #585858
 
-.link
-  text-decoration none
-  line-height 2u
-  border-bottom dotted 1px
+.navLinks
+  flex-direction row
+
+.navLink
+  font-weight 600
+  text-transform uppercase
+  color #7c7c7c
+  cursor pointer
+  &.focused
+    color #585858
+    cursor auto
