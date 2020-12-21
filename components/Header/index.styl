@@ -1,0 +1,37 @@
+.root
+  padding 0 2u
+  box-sizing border-box
+
+.header
+  flex-direction row
+  align-items center
+  justify-content space-between
+  padding 4u 0
+  +desktop()
+    padding 0
+
+.logo
+  justify-content center
+  width 15u
+  height 4u
+  +desktop()
+    height auto
+
+.img
+  height 10u
+  width 10u
+
+.navButtons
+  flex-direction row
+
+.icon
+  margin-left 2u
+  border none
+  justify-content center
+  cursor pointer
+  &.burger
+    border 1px solid grey
+    padding 4px
+    border-radius 0
+  &.first
+    margin-left 0
