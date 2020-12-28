@@ -7,7 +7,7 @@ import { Content } from '@startupjs/ui'
 
 import Header from '../../../components/Header'
 import Breadcrumb from '../../../components/Breadcrumb'
-import Main from '../../../components/Main'
+import ShopPage from '../../../components/ShopPage'
 import Footer from '../../../components/Footer'
 
 export default observer(function PHome() {
@@ -16,5 +16,6 @@ export default observer(function PHome() {
       View.container
         Header
         Breadcrumb
+        ShopPage
   `
 })
