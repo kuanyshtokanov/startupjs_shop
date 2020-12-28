@@ -9,6 +9,7 @@ import Categories from './Categories'
 import Colors from './Colors'
 import Sizes from './Sizes'
 import TopRated from './TopRated'
+import Products from './Products'
 
 const ShopPage = () => {
   const base = BASE_URL
@@ -23,7 +24,7 @@ const ShopPage = () => {
         Sizes
         TopRated
       View.products
-        Text.title PRODUCTS
+        Products
   `
 }
 
