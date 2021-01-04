@@ -18,7 +18,7 @@ const List = ({ data }) => {
   return pug`
     View.wrapper
       View.left
-        View.imgWrap
+        View.imgWrapper
           Image.img(source={uri:data.uri})
       View.right
         Text.title #{data.title}

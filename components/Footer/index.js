@@ -5,28 +5,40 @@ import './index.styl'
 import Section from '../Section'
 import Button from '../Button'
 import Link from '../Link'
+import SocialInfo from '../SocialInfo'
+import Logo from '../Logo'
+import MenuItem from '../MenuItem'
+import ContactInfo from '../ContactInfo'
 
 const Footer = () => {
   const handleClick = () => {
     console.log('Learn More pressed')
   }
 
+  const menus = [
+    'HOME',
+    'ABOUT US',
+    'SHOP',
+    'PAGES',
+    'BLOG',
+  ]
+
   return pug`
     View.footer
       View.container
-        Section
-          Text.title Aliquam sed mauris
-          Text.txt Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
-          Button(title='Learn more' onPress=handleClick info)
-        Section
-          Text.title Etiam feugiat
+        View.first
+          Text.txt 20 years experience
+          SocialInfo
+        View.second
+          Logo
+          View.menu
+            each item, index in menus
+              MenuItem(key=index last=index===menus.length-1) #{item}
+          View.line
           View.copyright
-            Text.copyright © Untitled. Design: 
-              Link(url='https://twitter.com/ajlkn')
-                Text HTML5 UP. 
-              Text Demo Images: 
-              Link(url='https://twitter.com/ajlkn')
-                Text Unsplash.
+            Text.txt Copyright © neha 2018. All Right Reserved.
+        View.third
+          ContactInfo
   `
 }
 

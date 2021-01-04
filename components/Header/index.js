@@ -6,6 +6,7 @@ import './index.styl'
 
 import Link from '../Link'
 import Menu from './Menu'
+import Logo from '../Logo'
 
 const Header = () => {
   const base = BASE_URL
@@ -25,8 +26,7 @@ const Header = () => {
   return pug`
     View.root
       View.header
-        View.logo
-          Image.img(source={uri:base+'/assets/logo.png'})
+        Logo
         Menu
         View.navButtons
           each item, index in items

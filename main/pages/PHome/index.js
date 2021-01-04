@@ -17,5 +17,6 @@ export default observer(function PHome() {
         Header
         Breadcrumb
         ShopPage
+        Footer
   `
 })

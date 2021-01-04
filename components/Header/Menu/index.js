@@ -3,7 +3,7 @@ import { View, Image, Text } from 'react-native'
 import { BASE_URL } from '@env'
 import './index.styl'
 
-import Link from '../../Link'
+import MenuItem from '../../MenuItem'
 
 const menus = [
   'HOME',
@@ -20,8 +20,7 @@ const Header = () => {
   return pug`
     View.menu
       each item, index in menus
-        View.menuItem
-          Text.txt(key=index) #{item}
+        MenuItem(key=index) #{item}
   `
 }
 

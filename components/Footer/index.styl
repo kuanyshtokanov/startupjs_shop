@@ -1,35 +1,93 @@
 .footer
-  padding 5u 2u 1u
+  background #f5f5f5
+  padding 6u 2u
   +tablet()
-    padding 6u 4u 2u
+    padding 10u 2u
   +desktop()
-    padding 8u 6u 4u
-  +wide()
-    padding 8u 8u 4u
+    padding 12u 2u
 
 .container
+  padding-left 2u
+  padding-right 2u
+  margin-left auto
+  margin-right auto
   display flex
+  margin-left -2u
+  margin-right -2u
+  flex-wrap wrap
+  width 100%
+  +tablet()
+    align-items center
+    flex-flow row wrap
+    justify-content space-between
   +desktop()
     flex-direction row
     align-items flex-start
+
+.first
+  // max-width 100%
+  position relative
+  flex-grow 0
+  flex-shrink 0
+  flex-basis 100%
+  +tablet()
+    flex-basis 40%
+  +desktop()
+    flex-basis 25%
+
+.second
+  margin-top 4u
+  // max-width 100%
+  position relative
+  flex-grow 0
+  flex-shrink 0
+  flex-basis 100%
+  +tablet()
+    flex-basis 60%
+    align-items center
+  +desktop()
+    flex-basis 50%
+    margin-top 0
+
+.logo
+  font-size 5u
+  font-weight 600
+
+.logoDot
+  color red
+
+.menu
+  flex-direction row
+  margin-top 2u
+
+.line
+  border-bottom 1px solid #474747
+  width 20u
+  margin-top 1u
+  margin-bottom 1u
+
+.third
+  width 100%
+  margin-top 4u
+  +desktop()
+    flex-basis 25%
+    align-items flex-end
+    margin-top 0
 
 .title
   font-size 3u
   font-weight 300
   color white
   line-height 6u
-  margin-bottom 1u
+  margin-bottom 2u
 
 .txt
   font-size 2u
   line-height 3u
-  color inherit
-  margin-bottom 4u
+  color #585858
+  margin-bottom 2u
+  font-weight 300
 
 .copyright
-  text-align left
-  font-size 1.5u
-  color rgba(255, 255, 255, 0.65)
-  margin-top 3u
-  +tablet()
-    text-align center
+  margin-top 1u
+  

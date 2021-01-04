@@ -14,17 +14,12 @@ const GridItem = ({ data }) => {
 
   return pug`
     View.wrapper
-      View.left
-        View.imgWrap
-          Image.img(source={uri:data.uri})
-      View.right
+      View.imgWrapper
+        Image.img(source={uri:data.uri})
+      View.info
         Text.title #{data.title}
         Text.price $ #{data.price}
-        Text.description #{data.description}
-        View.btns
-          Button.btn(title='ADD TO CART' onPress=onPress)
-          View.wishList
-            
+      Text.category #{data.category}
   `
 }
 
