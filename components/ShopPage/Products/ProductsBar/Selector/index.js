@@ -11,13 +11,13 @@ const ProductsSelector = () => {
   return pug`
     View.root
       Text.searchResults 
-        Text.red 23 
-        | Product Found of 
-        Text.red 50
+        Text.red=23
+        Text=" Product Found of "
+        Text.red=50
       View.sorting
-        Text.sortLabel Sort By : 
+        Text.sortLabel="Sort By : "
         View.sortSelect
-          Text.sortValue Default
+          Text.sortValue="Default"
           FontAwesomeIcon.icon(icon=starIcon size=16)
   `
 }

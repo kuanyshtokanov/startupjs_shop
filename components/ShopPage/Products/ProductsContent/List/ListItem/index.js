@@ -21,9 +21,9 @@ const List = ({ data }) => {
         View.imgWrapper
           Image.img(source={uri:data.uri})
       View.right
-        Text.title #{data.title}
-        Text.price $ #{data.price}
-        Text.description #{data.description}
+        Text.title=data.title
+        Text.price="$ "+data.price
+        Text.description=data.description
         View.btns
           Button.btn(title='ADD TO CART' onPress=onPress)
           View.wishList

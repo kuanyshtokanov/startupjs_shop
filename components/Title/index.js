@@ -6,7 +6,7 @@ import './index.styl'
 
 const Title = ({ children }) => {
   return pug`
-    Text.title #{children}
+    Text.title=children
   `
 }
 

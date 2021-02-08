@@ -6,9 +6,9 @@ const CategoryItem = ({ label, value }) => {
   return pug`
     View.listItem
       TouchableOpacity
-        Text.item #{label}
+        Text.item=label
       TouchableOpacity
-        Text.item #{value}
+        Text.item=value
   `
 }
 

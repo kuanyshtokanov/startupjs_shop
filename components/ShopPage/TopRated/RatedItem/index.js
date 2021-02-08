@@ -27,9 +27,9 @@ const RatedItem = ({ image }) => {
         TouchableOpacity(onPress=handleClick)
           Image.img(source={uri:base+image})
       View.right
-        Text.title #{title}
+        Text.title=title
         Stars(stars=2)
-        Text.price #{price}
+        Text.price=price
   `
 }
 

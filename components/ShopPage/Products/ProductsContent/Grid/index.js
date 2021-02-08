@@ -10,7 +10,7 @@ const Grid = ({ products }) => {
   return pug`
     View.wrapper
       each product, index in products
-        GridItem(data=product)
+        GridItem(key=index data=product)
   `
 }
 

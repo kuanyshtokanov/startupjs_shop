@@ -17,9 +17,9 @@ const GridItem = ({ data }) => {
       View.imgWrapper
         Image.img(source={uri:data.uri})
       View.info
-        Text.title #{data.title}
-        Text.price $ #{data.price}
-      Text.category #{data.category}
+        Text.title=data.title
+        Text.price="$ "+data.price
+      Text.category=data.category
   `
 }
 

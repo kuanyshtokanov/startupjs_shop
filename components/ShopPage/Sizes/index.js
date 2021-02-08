@@ -12,11 +12,11 @@ const Sizes = () => {
     View.wrapper
       Title size
       View.list
-        Text.size xl
-        Text.size m
-        Text.size l
-        Text.size ml
-        Text.size.last lm
+        Text.size="xl"
+        Text.size="m"
+        Text.size="l"
+        Text.size="ml"
+        Text.size.last="lm"
   `
 }
 
