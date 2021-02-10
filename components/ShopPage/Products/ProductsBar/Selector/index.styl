@@ -3,15 +3,28 @@
   +tablet()
     flex-direction row
 
-.searchResults, .sortLabel
+.searchResults, 
+  flex-direction row
+  +desktop()
+    margin-left 2u
+
+.txt, .red
+  font-size 2.5u
+  font-weight 600
+
+.txt
+  color #6c6c6c
+
+.red
+  color red
+
+.sortLabel
   color #6c6c6c
   font-size 2.5u
   font-weight 600
   margin 0
-  white-space normal
-
-.red
-  color red
+  +tablet()
+    margin-left 1u
 
 .sorting
   flex-direction row

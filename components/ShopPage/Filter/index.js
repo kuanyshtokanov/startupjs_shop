@@ -1,16 +1,10 @@
 import React from 'react'
-import { View, Image, Text, TextInput } from 'react-native'
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { BASE_URL } from '@env'
+import { View, Text, TextInput } from 'react-native'
 
 import Title from '../../Title'
 import './index.styl'
 
 const Filter = () => {
-  const base = BASE_URL
-
-  const searchIcon = ['fas', 'search']
-
   return pug`
     View.wrapper
       Title Filter by Price
@@ -19,7 +13,7 @@ const Filter = () => {
         Text.middleSlider
         Text.rightSlider
       View.prices
-        View.price
+        Text
           Text.priceLabel price : 
           TextInput.priceInput(value='$20 - $100')
         View
