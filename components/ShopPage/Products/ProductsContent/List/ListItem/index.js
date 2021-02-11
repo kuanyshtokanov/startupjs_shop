@@ -1,9 +1,7 @@
 import React from 'react'
-import { View, Image, Text, TextInput } from 'react-native'
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { View, Image, Text } from 'react-native'
 import { BASE_URL } from '@env'
 
-// import ColorItems from './ColorItems'
 import './index.styl'
 import Button from '../../../../../Button'
 import WishList from './WishList'
@@ -19,7 +17,7 @@ const List = ({ data }) => {
     View.wrapper
       View.left
         View.imgWrapper
-          Image.img(source={uri:data.uri})
+          Image.img(source={uri:base+'/'+data.uri})
       View.right
         Text.title=data.title
         Text.price="$ "+data.price
