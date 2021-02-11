@@ -7,8 +7,6 @@ import Button from '../../../../../Button'
 import WishList from './WishList'
 
 const List = ({ data }) => {
-  const base = BASE_URL
-
   const onPress = () => {
     console.log('add to favourites')
   }
@@ -17,7 +15,7 @@ const List = ({ data }) => {
     View.wrapper
       View.left
         View.imgWrapper
-          Image.img(source={uri:base+'/'+data.uri})
+          Image.img(source={uri:BASE_URL+'/'+data.uri})
       View.right
         Text.title=data.title
         Text.price="$ "+data.price

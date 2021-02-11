@@ -5,12 +5,10 @@ import { BASE_URL } from '@env'
 import './index.styl'
 
 const GridItem = ({ data }) => {
-  const base = BASE_URL
-
   return pug`
     View.wrapper
       View.imgWrapper
-        Image.img(source={uri:base+'/'+data.uri})
+        Image.img(source={uri:BASE_URL+'/'+data.uri})
       View.info
         Text.title=data.title
         Text.price="$ "+data.price

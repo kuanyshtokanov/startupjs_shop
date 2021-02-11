@@ -1,6 +1,19 @@
 .root
   padding 0 2u
   box-sizing border-box
+  margin-top 1u
+  margin-bottom 2u
+  padding-right 2u
+  padding-left 2u
+  +tablet()
+    padding-right 4u
+    padding-left 4u
+  +desktop()
+    padding-right 6u
+    padding-left 6u
+  +wide()
+    padding-right 12u
+    padding-left 12u
 
 .header
   flex-direction row

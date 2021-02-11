@@ -6,12 +6,10 @@ import './index.styl'
 import Link from '../Link'
 
 const Header = () => {
-  const base = BASE_URL
-
   return pug`
     View.header
       View.logo
-        Image.img(source={uri:base+'/assets/logo.png'})
+        Image.img(source={uri:BASE_URL+'/assets/logo.png'})
       Text.title Stellar
       Text.txt Just another free, fully responsive site template built by 
         Link(url='https://twitter.com/ajlkn')

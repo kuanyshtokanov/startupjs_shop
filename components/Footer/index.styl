@@ -1,6 +1,7 @@
 .footer
   background #f5f5f5
   padding 6u 2u
+  align-items center
   +tablet()
     padding 10u 2u
   +desktop()
@@ -24,14 +25,15 @@
     align-items flex-start
 
 .first
-  // max-width 100%
   position relative
   flex-grow 0
   flex-shrink 0
   flex-basis 100%
+  margin-top 0
   +tablet()
     flex-basis 40%
   +desktop()
+    margin-top 4u
     flex-basis 25%
 
 .second
@@ -71,7 +73,7 @@
   +desktop()
     flex-basis 25%
     align-items flex-end
-    margin-top 0
+    margin-top 4u
 
 .title
   font-size 3u

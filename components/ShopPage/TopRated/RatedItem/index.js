@@ -1,23 +1,22 @@
 import React from 'react'
-import { View, Image, Text, TouchableOpacity } from 'react-native'
+import { View, Image, Text, TouchableOpacity, Linking, Alert } from 'react-native'
 import { BASE_URL } from '@env'
 
 import './index.styl'
 import Stars from '../../../Stars'
 
 const RatedItem = ({ image }) => {
-  const base = BASE_URL
   const title = 'Flying Drone'
   const stars = 2
   const price = '$140.00'
 
   const handleClick = async () => {
-    const supported = await Linking.canOpenURL('#');
+    const supported = await Linking.canOpenURL('#')
 
     if (supported) {
-      await Linking.openURL('#');
+      await Linking.openURL('#')
     } else {
-      Alert.alert(`Don't know how to open this URL: ${'#'}`);
+      Alert.alert(`Don't know how to open this URL: ${'#'}`)
     }
   }
 
@@ -25,10 +24,10 @@ const RatedItem = ({ image }) => {
     View.list
       View.left
         TouchableOpacity(onPress=handleClick)
-          Image.img(source={uri:base+image})
+          Image.img(source={uri:BASE_URL+image})
       View.right
         Text.title=title
-        Stars(stars=2)
+        Stars(stars=stars)
         Text.price=price
   `
 }

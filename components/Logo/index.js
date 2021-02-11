@@ -4,8 +4,10 @@ import './index.styl'
 
 const Logo = () => {
   return pug`
-    Text.logo Neha
-      Text.logoDot .
+    Text
+      Text.logoFirst n
+      Text.logoSecond eha
+        Text.logoDot .
   `
 }
 

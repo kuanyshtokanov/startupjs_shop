@@ -5,16 +5,18 @@ import { BASE_URL } from '@env'
 import './index.styl'
 
 const Breadcrumb = () => {
-  const base = BASE_URL
   const styles = StyleSheet.create({
     backgroundContainer: {
       flex: 1,
       width: '100%',
       height: '100%'
+    },
+    imageStyle: {
+      resizeMode: 'cover'
     }
   })
   return pug`
-    ImageBackground(source={uri: base+'/assets/breadcrumb.jpg'} style=styles.backgroundContainer)
+    ImageBackground(source={uri: BASE_URL+'/assets/breadcrumb.jpg'} style=styles.backgroundContainer imageStyle=styles.imageStyle)
       View.root
         View.wrapper
           Text.title Shop
