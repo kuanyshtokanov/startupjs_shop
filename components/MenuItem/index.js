@@ -4,7 +4,7 @@ import './index.styl'
 
 const MenuItem = ({ children, last }) => {
   return pug`
-    View.menuItem(styleName=[{last:last}])
+    View.menuItem(styleName={last:last})
       TouchableOpacity
         Text.txt #{children}
   `

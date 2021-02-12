@@ -4,7 +4,7 @@ import './index.styl'
 
 const Section = ({ children, center }) => {
   return pug`
-    View.section(styleName=[{ center }]) #{children}
+    View.section(styleName={ center }) #{children}
   `
 }
 

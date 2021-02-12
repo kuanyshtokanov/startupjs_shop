@@ -1,25 +1,21 @@
 import React from 'react'
-import { View, Image, Text } from 'react-native'
+import { View } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { BASE_URL } from '@env'
 import './index.styl'
 
-import Link from '../Link'
 import Menu from './Menu'
 import Logo from '../Logo'
 
 const Header = () => {
-  const base = BASE_URL
-
   const items = [
     {
-      iconSrc: ['fas', 'search'],
+      iconSrc: ['fas', 'search']
     },
     {
-      iconSrc: ['fas', 'shopping-bag'],
+      iconSrc: ['fas', 'shopping-bag']
     },
     {
-      iconSrc: ['fas', 'bars'], //fas-times
+      iconSrc: ['fas', 'bars']
     }
   ]
 
@@ -30,7 +26,7 @@ const Header = () => {
         Menu
         View.navButtons
           each item, index in items
-            View.icon(key=index styleName=[{first: index===0, burger: index>1}])
+            View.icon(key=index styleName={first: index===0, burger: index>1})
               FontAwesomeIcon(icon=item.iconSrc size=20 color='rgba(0,0,0, 0.85)')
 
   `

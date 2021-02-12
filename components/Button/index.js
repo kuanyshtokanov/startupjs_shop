@@ -5,8 +5,8 @@ import './index.styl'
 const Button = ({ children, onPress, title, info, action }) => {
   return pug`
     TouchableOpacity(onPress=onPress)
-      View.btn(styleName=[{ info, action }])
-        Text.txt(styleName=[{ info, action }]) #{title}
+      View.btn(styleName={ info, action })
+        Text.txt #{title}
   `
 }
 

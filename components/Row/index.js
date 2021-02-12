@@ -5,7 +5,7 @@ import './index.styl'
 
 const Row = ({ title, children, last }) => {
   return pug`
-    View.row(styleName=[{ last }])
+    View.row(styleName={ last })
       Text.title #{title}
       Text.text #{children}
   `
