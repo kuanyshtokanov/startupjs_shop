@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import './index.styl'
 
 const ProductsSelector = () => {
-  const starIcon = ['fas', 'chevron-down']
+  const downIcon = ['fas', 'chevron-down']
 
   return pug`
     View.root
@@ -17,7 +17,7 @@ const ProductsSelector = () => {
         Text.sortLabel Sort By : 
         View.sortSelect
           Text.sortValue Default
-          FontAwesomeIcon.icon(icon=starIcon size=16)
+          FontAwesomeIcon.icon(icon=downIcon size=16)
   `
 }
 

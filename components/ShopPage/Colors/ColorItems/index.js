@@ -1,16 +1,11 @@
 import React from 'react'
 import { View } from 'react-native'
+
 import './index.styl'
 
-const CategoryItems = () => {
+const CategoryItems = ({ red, pink, blue, sky, green, purple, last }) => {
   return pug`
-    View.list
-      View.color.red
-      View.color.pink
-      View.color.blue
-      View.color.sky
-      View.color.green
-      View.color.purple.last
+    View(styleName={red, pink, blue, sky, green, purple, last}).color
   `
 }
 

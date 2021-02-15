@@ -11,12 +11,12 @@ const ContactInfo = () => {
 
   return pug`
     View.container
-      Row(title='Phone :')
+      Row(first title='Phone :')
         Text.txt +012 345 678 102
       Row(title='Email :')
         View.link
           Text(onPress=sendEmail).linkTxt info@example.com
-      Row(title='Address :' last)
+      Row(title='Address :')
         Text.txt Dhaka Bangladesh
   `
 }

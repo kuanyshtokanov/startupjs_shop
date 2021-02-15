@@ -5,7 +5,7 @@ import { BASE_URL } from '@env'
 import './index.styl'
 import Stars from '../../../Stars'
 
-const RatedItem = ({ image }) => {
+const RatedItem = ({ first, image }) => {
   const title = 'Flying Drone'
   const stars = 2
   const price = '$140.00'
@@ -21,7 +21,7 @@ const RatedItem = ({ image }) => {
   }
 
   return pug`
-    View.list
+    View(styleName={first}).list
       View.left
         TouchableOpacity(onPress=handleClick)
           Image.img(source={uri:BASE_URL+image})

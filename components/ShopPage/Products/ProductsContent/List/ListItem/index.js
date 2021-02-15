@@ -6,13 +6,13 @@ import './index.styl'
 import Button from '../../../../../Button'
 import WishList from './WishList'
 
-const List = ({ data }) => {
+const List = ({ first, data }) => {
   const onPress = () => {
     console.log('add to favourites')
   }
 
   return pug`
-    View.wrapper
+    View(styleName={first}).wrapper
       View.left
         View.imgWrapper
           Image.img(source={uri:BASE_URL+'/'+data.uri})

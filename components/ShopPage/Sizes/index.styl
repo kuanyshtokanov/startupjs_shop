@@ -1,14 +1,17 @@
 .wrapper
-  margin-bottom 5u
+  margin-top 4u
+  +desktop()
+    margin-top 5u
   
 .list
   flex-direction row
+  margin-top 4u
 
 .size
   color #888888
   font-size 2u
   font-weight 600
   text-transform uppercase
-  margin-right 2u
-  &.last
-    margin-right 0
+  margin-left 2u
+  &.first
+    margin-left 0

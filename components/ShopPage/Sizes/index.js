@@ -1,22 +1,17 @@
 import React from 'react'
-import { View, Image, Text, TextInput } from 'react-native'
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { BASE_URL } from '@env'
+import { View, Text } from 'react-native'
 
-import Title from '../../Title'
-// import ColorItems from './ColorItems'
+import Title from 'components/Title'
 import './index.styl'
+import { sizes } from '../../../consts'
 
 const Sizes = () => {
   return pug`
     View.wrapper
       Title size
       View.list
-        Text.size="xl"
-        Text.size="m"
-        Text.size="l"
-        Text.size="ml"
-        Text.size.last="lm"
+        each item, index in sizes
+          Text(key=index styleName={first:index===0}).size=item.label
   `
 }
 

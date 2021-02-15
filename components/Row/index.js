@@ -3,9 +3,9 @@ import { View, Text } from 'react-native'
 
 import './index.styl'
 
-const Row = ({ title, children, last }) => {
+const Row = ({ first, title, children, last }) => {
   return pug`
-    View.row(styleName={ last })
+    View.row(styleName={ first })
       Text.title #{title}
       Text.text #{children}
   `

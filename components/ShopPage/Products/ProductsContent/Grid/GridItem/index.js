@@ -4,9 +4,9 @@ import { BASE_URL } from '@env'
 
 import './index.styl'
 
-const GridItem = ({ data }) => {
+const GridItem = ({ first, data }) => {
   return pug`
-    View.wrapper
+    View(styleName={first}).wrapper
       View.imgWrapper
         Image.img(source={uri:BASE_URL+'/'+data.uri})
       View.info
