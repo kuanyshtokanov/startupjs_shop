@@ -23,22 +23,22 @@ export const categories = [
 
 export const colors = [
   {
-    color: 'red'
+    color: '#ff4136'
   },
   {
-    color: 'pink'
+    color: '#ff01f0'
   },
   {
-    color: 'blue'
+    color: '#3649ff'
   },
   {
-    color: 'sky'
+    color: '#00c0ff'
   },
   {
-    color: 'green'
+    color: '#00ffae'
   },
   {
-    color: 'purple'
+    color: '#8a00ff'
   }
 ]
 
