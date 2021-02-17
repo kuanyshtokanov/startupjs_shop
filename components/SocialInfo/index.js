@@ -22,14 +22,14 @@ const SocialInfo = () => {
     {
       iconSrc: ['fab', 'github'],
       url: 'https://github.com/'
-    },
+    }
   ]
 
   return pug`
     View.container
       each iconData, index in socialData
         Link(url=iconData.url key=iconData.iconSrc)
-          FontAwesomeIcon.icon(icon=iconData.iconSrc)
+          FontAwesomeIcon.icon(styleName={first:index===0} icon=iconData.iconSrc)
   `
 }
 
