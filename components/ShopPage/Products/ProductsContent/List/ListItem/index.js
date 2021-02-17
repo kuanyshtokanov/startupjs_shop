@@ -3,7 +3,7 @@ import { View, Image, Text } from 'react-native'
 import { BASE_URL } from '@env'
 
 import './index.styl'
-import Button from '../../../../../Button'
+import Button from 'components/Button'
 import WishList from './WishList'
 
 const List = ({ first, data }) => {

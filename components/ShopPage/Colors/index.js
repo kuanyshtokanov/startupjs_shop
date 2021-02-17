@@ -12,7 +12,8 @@ const Colors = () => {
       Title Colors
       View.list
         each item, index in colors
-          ColorItems(key=index
+          ColorItems(
+            key=index
             last=index===colors.length-1
             red=item.color==='red'
             pink=item.color==='pink'

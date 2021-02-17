@@ -1,9 +1,8 @@
 import React from 'react'
-import { View, Image, Text } from 'react-native'
-import { BASE_URL } from '@env'
-import './index.styl'
+import { View } from 'react-native'
 
 import MenuItem from '../../MenuItem'
+import './index.styl'
 
 const menus = [
   'HOME',
@@ -15,8 +14,6 @@ const menus = [
 ]
 
 const Header = () => {
-  const base = BASE_URL
-
   return pug`
     View.menu
       each item, index in menus

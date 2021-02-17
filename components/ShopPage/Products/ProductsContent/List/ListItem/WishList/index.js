@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import './index.styl'
 
 const WishList = () => {
-  const [isFavorite, addToFavorite] = useState(false)
+  const [isFavorite, setIsFavorite] = useState(false)
 
   const icon = ['fas', 'heart']
 
   const handleClick = () => {
-    addToFavorite(!isFavorite)
+    setIsFavorite(!isFavorite)
   }
 
   return pug`
