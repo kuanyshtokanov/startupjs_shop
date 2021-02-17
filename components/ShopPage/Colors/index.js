@@ -14,7 +14,7 @@ const Colors = () => {
           View.color(
             styleName={first:index===0}
             key=index
-            style={backgroundColor:item.color}
+            style={backgroundColor:item}
           )
   `
 }

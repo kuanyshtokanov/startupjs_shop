@@ -22,24 +22,12 @@ export const categories = [
 ]
 
 export const colors = [
-  {
-    color: '#ff4136'
-  },
-  {
-    color: '#ff01f0'
-  },
-  {
-    color: '#3649ff'
-  },
-  {
-    color: '#00c0ff'
-  },
-  {
-    color: '#00ffae'
-  },
-  {
-    color: '#8a00ff'
-  }
+  '#ff4136',
+  '#ff01f0',
+  '#3649ff',
+  '#00c0ff',
+  '#00ffae',
+  '#8a00ff'
 ]
 
 export const sizes = [
