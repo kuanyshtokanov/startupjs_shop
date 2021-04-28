@@ -1,0 +1,33 @@
+.root
+  padding 9u 0
+  +tablet()
+    padding 15u 0
+  +desktop()
+    padding 25u 0
+
+.wrapper
+  width 100%
+  margin auto
+  padding 0 2u
+  +tablet()
+    max-width 70u
+  +desktop()
+    max-width 120u
+  +wide()
+    max-width 150u
+
+.title
+  font-size 4u
+  font-weight bold
+  color #585858
+
+.navLinks
+  flex-direction row
+  margin-top 2u
+
+.navLink
+  font-weight 600
+  text-transform uppercase
+  color #7c7c7c
+  &.focused
+    color #585858

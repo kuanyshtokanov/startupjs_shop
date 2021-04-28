@@ -1,0 +1,41 @@
+.root
+  padding 0 2u
+  box-sizing border-box
+  margin-top 1u
+  padding 0 2u
+  +tablet()
+    padding 0 4u
+  +desktop()
+    padding 0 6u
+  +wide()
+    padding 0 12u
+
+.header
+  flex-direction row
+  align-items center
+  justify-content space-between
+  padding 4u 0
+  +desktop()
+    padding 0
+
+.logo
+  font-size 5u
+  font-weight 600
+
+.logoDot
+  color red
+
+.navButtons
+  flex-direction row
+
+.icon
+  margin-left 2u
+  border none
+  justify-content center
+  cursor pointer
+  &.burger
+    border 1px solid grey
+    padding 4px
+    border-radius 0
+  &.first
+    margin-left 0

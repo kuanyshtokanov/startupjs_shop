@@ -1,0 +1,42 @@
+.wrapper
+  padding 0 1u
+  box-sizing border-box
+  max-width 100%
+  margin-top 2u
+  position relative
+  flex-grow 0
+  flex-shrink 0
+  flex-basis 100%
+  +tablet()
+    flex-basis 50%
+  +wide()
+    flex-basis 25%
+  &.first
+    margin-top 0
+
+.imgWrapper
+  align-items center
+  background-size cover
+
+.img
+  min-height 44u
+  width 100%
+
+.info
+  flex-direction row
+  justify-content space-between
+  margin-top 2u
+
+.title
+  color #5d5d5d
+  font-size 1.9u
+  font-weight 600
+  text-transform uppercase
+
+.price
+  color #ee3333
+  font-weight 600
+
+.category
+  margin-top 1u
+  color #474747
